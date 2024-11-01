@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Story</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              customYellow: '#FFD700',
+              lightBlue: '#E0F7FA',
+            },
+            fontFamily: {
+              sans: ['Arial', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-lightBlue min-h-screen flex flex-col items-center font-sans">
+
+    <section class="w-full max-w-6xl p-6">
+      <div class="flex items-center justify-between py-6">
+        <h1 class="text-4xl font-bold text-gray-900">
+          Inside <span class="font-bold underline" style="text-decoration-color: #FFD700;">story</span> of our<br>company.
+        </h1>
+        
+        <button class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition duration-300">
+          Go to Blog
+        </button>
+      </div>
+
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300x200" alt="Technology" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="bg-yellow-200 text-yellow-600 font-semibold text-xs px-2 py-1 rounded">TECHNOLOGY</span>
+            <h2 class="text-xl font-bold mt-2 text-gray-800">A Discount Cartridge dsu is Better Ever.</h2>
+            <p class="mt-4 text-blue-500 text-lg font-semibold">→</p>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300x200" alt="Design" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="bg-blue-200 text-blue-600 font-semibold text-xs px-2 py-1 rounded">DESIGN</span>
+            <h2 class="text-xl font-bold mt-2 text-gray-800">Good design is the key of business.</h2>
+            <p class="mt-4 text-blue-500 text-lg font-semibold">→</p>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300x200" alt="Support" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="bg-pink-200 text-pink-600 font-semibold text-xs px-2 py-1 rounded">SUPPORT</span>
+            <h2 class="text-xl font-bold mt-2 text-gray-800">Client satisfaction is the goal of business success.</h2>
+            <p class="mt-4 text-blue-500 text-lg font-semibold">→</p>
+          </div>
+        </div>
+
+      </section>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
